@@ -1,82 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>header</title>
-</head>
-<body>
+
 	<div class="wrap_top">
-            <p>
-                <a class="sc">收藏</a>
-                <a href="index.html">首页</a><a id="topLogin">请登录</a>
-                <a class="on" id="topLoginName" style="display:none;"></a>
-                <a id="topLoginOut" style="display:none;">退出</a>
-                <a id="topRegister">免费注册</a>
-                <span>|</span>
-                <font id="ShoppingCart">购物车<a id="shoppingCartNum">0</a>件</font>
-                <a id="myJYH">我的家有</a>
-                <font id="fontDiscount">可用优惠劵<a id="discountNum">0</a>张</font>
-                <a id="myFavourites">我的收藏</a><span>|</span>
-                <label class="iphone"><a>手机版<em>家有购物APP</em></strong></a></label>
-                <label class="wx">
-                    <a>
-                        微信版<strong class="wei">
-                        </strong>
-                    </a>
-                </label>
-            </p>
-        </div>
-        <div class="head">
-            <div class="top">
-                <h1><a href="index.html"><img src="https://image-mall.huijiayou.cn/hjyweb/img/logo1.png" alt="家有购物" title="家有购物"></a></h1>
-                <div class="search">
-                    <input type="text" id="txtSearch" value="">
-                    <a id="btnSearch" class="s1">搜 索</a>
-                    <p id="hotWord" module="202005">
-                    </p>
-                    <!--====搜索关联====-->
-                    <div class="relevance" id="divAssociate" style="display:none;">
-                    </div>
-                </div>
-                <div class="fr" id="gou">
-                    <a onclick="g_const_PageURL.GoByMainIndex(g_const_PageURL.Cart, '','', '1');" class="gou">我的购物车<i id="i_totalnum_top">0</i></a>
-                    <em id="biao"></em>
-                    <div class="ware_list" id="ware_list">
-                        <!--==有商品===-->
-                        <div class="you" id="cart_yes">
-                            <h2>最新加入商品</h2>
-                            <ul class="bd description2" id="wrasList"></ul>
-                            <div class="ft">
-                                <span><a style="cursor:pointer" id="btnCart">去购物车</a></span>
-                                <font>共<i id="i_totalnum">0</i>件商品</font>
-                                <font>合计<b id="i_totalprice">￥0.00</b>元</font>
-                            </div>
-                        </div>
-                        <!--===没有商品===-->
-                        <div class="wu" style="display:none;" id="cart_no">
-                            购物车中还没有商品，赶紧去选购吧
-                        </div>
-                    </div>
+        <p>
+        	<a class="fl">收藏</a>              
+            <a href="index.html" class="index">首页</a><a id="topLogin">请登录</a>
+            <a class="on" id="topLoginName" style="display:none;"></a>
+            <a id="topLoginOut" style="display:none;">退出</a>
+            <a id="topRegister">免费注册</a>
+            <span>|</span>
+            <font id="cart">购物车<a id="cartNum">0</a>件</font>
+            <a id="myJYH">我的家有</a>
+            <font id="discount">可用优惠劵<a id="discountNum">0</a>张</font>
+            <a id="myFavourites">我的收藏</a><span>|</span>
+            <label class="iphone"><a>手机版</a></label>
+            <label class="wx">
+                <a>微信版</a>
+            </label>
+        </p>
+    </div>
+     <div class="head">
+        <div class="top">
+            <h1><a href="index.html"><img src="https://image-mall.huijiayou.cn/hjyweb/img/logo1.png" alt="家有购物" title="家有购物"></a></h1>
+            <div class="search">
+                <input type="text" id="txtSearch" value="">
+                <a id="btnSearch" class="s1">搜 索</a>
+                <p id="hotWord">
+                	<a class="curr">护肤</a>
+                	<a class="">眼霜</a>
+                	<a class="">双立人</a>
+                	<a class="">保湿</a>
+                	<a class="">女装</a>
+                	<a class="">康宁</a>
+                	<a class="">营养食品</a>
+                	<a class="">破壁机</a>
+                	<a class="">空气炸锅</a>
+                </p>
+                <!--====搜索关联====-->
+                <div class="relevance" id="divAssociate" style="display:none;">
                 </div>
             </div>
-            <div class="nav">
-                <b id="nav1">
-                    全部商品分类
-                    <div class="pop description" id="navMain" style="display:block!important;">
-                        <div id="pop">
+            <div class="fr" id="gou">
+                <a class="gou">我的购物车<i id="i_totalnum_top">0</i></a>
+                <em id="biao"></em>
+                <!-- <div class="ware_list" id="ware_list">
+                    ==有商品===
+                    <div class="you" id="cart_yes">
+                        <h2>最新加入商品</h2>
+                        <ul class="bd description2" id="wrasList"></ul>
+                        <div class="ft">
+                            <span><a style="cursor:pointer" id="btnCart">去购物车</a></span>
+                            <font>共<i id="i_totalnum">0</i>件商品</font>
+                            <font>合计<b id="i_totalprice">￥0.00</b>元</font>
                         </div>
                     </div>
-                </b>
-                <ul module="2020012">
-                    <li><a href="Index.html" class="curr" style="cursor:pointer" target="_self">首页</a></li>
-                    <li><a onclick="g_const_PageURL.GoByMainIndex(g_const_PageURL.TVShow, '','','1')" style="cursor:pointer">TV直播</a></li>
-                    <li><a onclick="g_const_PageURL.GoByMainIndex(g_const_PageURL.BrandPreferenceList,'','','1')" style="cursor:pointer">品牌惠</a></li>
-                    <!--<li><a>海外购</a></li>-->
-                    <li><a href="/APP.html" style="cursor:pointer" target="_blank">家有购物APP</a></li>
-                    <li><a href="http://www.jiayouvip.cn" target="_blank" style="cursor:pointer">家有尊享</a></li>
-                </ul>
+                    ===没有商品===
+                    <div class="wu" style="display:none;" id="cart_no">
+                        购物车中还没有商品，赶紧去选购吧
+                    </div>
+                </div> -->
             </div>
         </div>
-        <!--===头部 end===-->
+        <div class="nav">
+            <b id="nav1">
+                全部商品分类
+                <div class="pop description" id="navMain" style="display:block!important;">
+                    <div class="" id="pop">
+                    	<a id="li_level_0">海外购</a>
+                    	<a id="li_level_1">生活电器</a>
+                    	<a id="li_level_2">品质厨房</a>
+                    	<a id="li_level_3">厨房电器</a>
+                    	<a id="li_level_4">生活家居</a>
+                    	<a id="li_level_5">布艺家纺</a>
+                    	<a id="li_level_6">服装服饰</a>
+                    	<a id="li_level_7">箱包配饰</a>
+                    	<a id="li_level_8">美妆个护</a>
+                    	<a id="li_level_9">食品饮料</a>
+                    	<a id="li_level_10">运动健康</a>
+                    	<a id="li_level_11">3C数码</a>
+                    </div>
+                </div>
+            </b>
+            <ul>
+                <li><a href="index.html" class="curr" style="cursor:pointer" target="_self">首页</a></li>
+                <li><a style="cursor:pointer">TV直播</a></li>
+                <li><a style="cursor:pointer">品牌惠</a></li>
+                <!--<li><a>海外购</a></li>-->
+                <li><a href="/APP.html" style="cursor:pointer" target="_blank">家有购物APP</a></li>
+                <li><a href="http://www.jiayouvip.cn" target="_blank" style="cursor:pointer">家有尊享</a></li>
+                
+            </ul>
+        </div>
+    </div>         
 </body>
 </html>
