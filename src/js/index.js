@@ -28,10 +28,10 @@ require(["config"], function(){
 		});
 
  		require(["jquery", "template", "cookie"], function($, template) {
-			$.ajax("../mock/main.json").done(function(responseData) {
+			$.ajax("../mock/live.json").done(function(responseData) {
 
 				var html = template("cate", {
-					cat: responseData.data.modulesType[0].mainlive
+					cat: responseData.data.modulesType[0].mainlive.moduleItems
 				});
 				$(".live_list").html(html);
 			});

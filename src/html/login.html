@@ -10,16 +10,18 @@
 </head>
 <body>
     <div class="warp"></div>
-    <div class="" id="mainContent"><!--===头部 end===-->
+    <!--===头部 start===-->
+    <div class="" id="mainContent">
+    <!--===头部 end===-->
 <!--===内容 star===-->
-        <div class="login" module="202019">
+        <div class="login">
             <div class="fl">
-                <a href="/APP.html" target="_blank" num="202019-1"><img src="https://image-mall.huijiayou.cn/hjyweb/img/login001.jpg" alt=""></a>
+                <a href="/APP.html" target="_blank"><img src="https://image-mall.huijiayou.cn/hjyweb/img/login001.jpg" alt=""></a>
             </div>
             <div class="fr">
                 <div class="hd">
-                    <a class="curr" id="us" num="202019-2"><i>用户登录</i></a>
-                    <a id="login" num="202019-3"><i>快捷登录</i></a>
+                    <a class="curr" id="us"><i>用户登录</i></a>
+                    <a id="login"><i>快捷登录</i></a>
                 </div>
                 <div class="bd" id="user">
                     <!--==错误提示==-->
@@ -30,9 +32,9 @@
                         <li><i class="i2"></i><input type="password" id="txtPass" value="" placeholder="请输入密码"><em style="display:none"></em></li>
                        
 
-                        <li class="curr"><span><a onclick="g_const_PageURL.GoByMainIndex(g_const_PageURL.Register, '');" style="cursor:pointer;" num="202019-4">新用户注册</a></span><label num="202019-label-1"><input name="" type="checkbox" value="0" id="ckLogin1">下次自动登录</label><a style="cursor:pointer;" onclick="g_const_PageURL.GoByMainIndex(g_const_PageURL.FindPassword, '');" num="202019-5">重置密码</a></li>
+                        <li class="curr"><span><a style="cursor:pointer;">新用户注册</a></span><label><input name="" type="checkbox" value="0" id="ckLogin1">下次自动登录</label><a style="cursor:pointer;">重置密码</a></li>
                     </ul>
-                    <p><a id="btnLogin" style="cursor:pointer;" num="202019-6">登 录</a></p>
+                    <p><a id="btnLogin" style="cursor:pointer;">登 录</a></p>
                 </div>
                 <div class="bd quick" id="quick" style="display:none;">
                     <!--==温馨提示==-->
@@ -43,15 +45,15 @@
                     <!--错误状态下的input有class="curr" em标签不显示-->
                     <ul>
                         
-                        <li><i class="i1"></i><input type="text" value="" maxlength="11" placeholder="请输入11位有效手机号" id="txtPhone"><button id="btnCode" num="202019-button-1">获取验证码</button></li>
+                        <li><i class="i1"></i><input type="text" value="" maxlength="11" placeholder="请输入11位有效手机号" id="txtPhone"><button id="btnCode">获取验证码</button></li>
                         <li id="li_Verify" style="">
                             <i class="i2"></i><input id="txtPicCode" type="text" value="" placeholder="请输入图片验证码">
-                            <img src="/Ajax/LoginHandler.ashx?action=code" id="Verify_codeImag" alt="点击切换验证码" class="d_get_code" title="点击切换验证码" style="vertical-align: top; cursor: pointer;" onclick="ToggleCode(this.id, '/Ajax/LoginHandler.ashx'); return false;">
+                            <img src="/Ajax/LoginHandler.ashx?action=code" id="Verify_codeImag" alt="点击切换验证码" class="d_get_code" title="点击切换验证码" style="vertical-align: top; cursor: pointer;">
                         </li>
                         <li><i class="i2"></i><input type="text" value="" id="txtCode" placeholder="请输入验证码"><em style="display:none;"></em></li>
-                        <li class="curr"><span><a onclick="g_const_PageURL.GoByMainIndex(g_const_PageURL.Register, '');" style="cursor:pointer;" num="202019-7">新用户注册</a></span><label num="202019-label-2"><input name="" type="checkbox" value="1" id="ckLogin2">下次自动登录</label><a style="cursor:pointer;" onclick="g_const_PageURL.GoByMainIndex(g_const_PageURL.FindPassword, '');" num="202019-8">重置密码</a></li>
+                        <li class="curr"><span><a style="cursor:pointer;">新用户注册</a></span><label><input name="" type="checkbox" value="1" id="ckLogin2">下次自动登录</label><a style="cursor:pointer;">重置密码</a></li>
                     </ul>
-                    <p><a id="btnPhoneLogin" style="cursor:pointer;" num="202019-9">登 录</a></p>
+                    <p><a id="btnPhoneLogin" style="cursor:pointer;">登 录</a></p>
                 </div>
             </div>
         </div>
