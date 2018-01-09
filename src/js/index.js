@@ -34,31 +34,28 @@ require(["config"], function(){
 					cat: responseData.data.modulesType[0].mainlive.moduleItems
 				});
 				$(".live_list").html(html);
+			}).done(function(){
+
+				$.ajax("../mock/floors.json").done(function(data){
+			
+					var html = template("floor", {
+						floor: data.res_body.data
+					});
+
+					$(".floors").html(html);
+				});
+			});	
+
+			$(".main .floors").on("click", function(){
+				$.cookie("products", "", {
+					path:"/"
+				});
+
+				var _pro = $(this);
+				console.log(this);
+				
+				
 			});
-		 			
-				/*$(".category-list li").hover(function() {
-				var imgs = $(this).children("a").children("i").children("img");
-				imgs.stop().animate({
-					"width": "101%",
-					"height": "101%"
-				}, 100, "linear")
-
-				$(this).css({
-					"box-shadow": "0 6px 6px rgba(0, 0, 0, 0.1)"
-
-				});
-			}, function() {*/
-				/*var imgs = $(this).children("a").children("i").children("img");
-
-				imgs.stop().animate({
-					"width": "100%",
-					"height": "100%"
-				}, 100, "linear")
-				$(this).css({
-					"box-shadow": ""
-
-				});
-			});*/
 		});
 	});
 });

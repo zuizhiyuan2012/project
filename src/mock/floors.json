@@ -1,0 +1,487 @@
+{
+	"res_body" : {
+		"data" : [
+			{
+				"title" : "1F 品质家居",
+				"left" : {
+					"up" : {
+						"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/620ebfbce9b941da8e28c50cccbd76e5.jpg",
+						"href":"../html/list.html",
+						"id":"11"
+					},
+					"down" : {
+						"img" : [
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/994ce351e16b4f79b0dd57b15a86671c.jpg", 
+							"href":"../html/list.html",
+							"id":"12"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/6751ea5767cd45ffb920c974a8d7d94f.jpg", 
+							"href":"../html/list.html",
+							"id":"13"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/c9448bc0173b418aa4f615a5c9224259.jpg", 
+							"href":"../html/list.html",
+							"id":"15"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/92a851739165423db9be5c5f1be49640.jpg", 
+							"href":"../html/list.html",
+							"id":"16"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/41a07b9a65de4fb3ba5c6c2ce96b997b.jpg", 
+							"href":"../html/list.html",
+							"id":"17"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/92d52be226864c88878b8450e125ea5b.jpg", 
+							"href":"../html/list.html",
+							"id":"18"}
+						]
+					}
+				},
+				"middle" : {
+					"up" : {
+						"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/a4c389fe910d49309079f181140ff827.jpg",
+						"href":"../html/detail.html",
+						"id":"19"
+					},
+					"down" : {
+						"img" : [
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/d7ab6c1ea0794cf6b9cf625bc6da34a7.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"20"
+							},
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/af4099677bab4ddfadfb5db77b939b6d.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"21"
+							},
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/c1516efd5a3046c1b8eff10e2c955a4f.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"22"
+							}
+						]
+					}
+				},
+				"right" : {
+					"title" : "本月热销榜",
+					"data" : [
+						{
+							"id" : "23",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29bae/fa52b11b764e4621a801bff782a90059.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "298"
+						},
+						{
+							"id" : "24",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c12/ea7c942591e74449a58d3bc84b00b3c7.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "299"
+						},
+						{
+							"id" : "25",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27556/36487180106448d2ad3933b8762631d4.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "69"
+						},
+						{
+							"id" : "26",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c12/ea7c942591e74449a58d3bc84b00b3c7.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "299"
+						},
+						{
+							"id" : "27",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27556/36487180106448d2ad3933b8762631d4.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "69"
+						}
+					]
+				}
+			},
+			{
+				"title" : "2F 美妆个护",
+				"left" : {
+					"up" : {
+						"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/620ebfbce9b941da8e28c50cccbd76e5.jpg",
+						"href":"../html/list.html",
+						"id":"27"
+					},
+					"down" : {
+						"img" : [
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/994ce351e16b4f79b0dd57b15a86671c.jpg", 
+							"href":"../html/list.html",
+							"id":"28"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/6751ea5767cd45ffb920c974a8d7d94f.jpg", 
+							"href":"../html/list.html",
+							"id":"29"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/c9448bc0173b418aa4f615a5c9224259.jpg", 
+							"href":"../html/list.html",
+							"id":"30"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/92a851739165423db9be5c5f1be49640.jpg", 
+							"href":"../html/list.html",
+							"id":"31"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/41a07b9a65de4fb3ba5c6c2ce96b997b.jpg", 
+							"href":"../html/list.html",
+							"id":"32"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/92d52be226864c88878b8450e125ea5b.jpg", 
+							"href":"../html/list.html",
+						"id":"33"}
+						]
+					}
+				},
+				"middle" : {
+					"up" : {
+						"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/a4c389fe910d49309079f181140ff827.jpg",
+						"href":"../html/detail.html",
+						"id":"34"
+					},
+					"down" : {
+						"img" : [
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/d7ab6c1ea0794cf6b9cf625bc6da34a7.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"35"
+							},
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/af4099677bab4ddfadfb5db77b939b6d.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"36"
+							},
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/c1516efd5a3046c1b8eff10e2c955a4f.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"37"
+							}
+						]
+					}
+				},
+				"right" : {
+					"title" : "本月热销榜",
+					"data" : [
+						{
+							"id" : "38",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29bae/fa52b11b764e4621a801bff782a90059.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "298"
+						},
+						{
+							"id" : "39",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c12/ea7c942591e74449a58d3bc84b00b3c7.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "299"
+						},
+						{
+							"id" : "40",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27556/36487180106448d2ad3933b8762631d4.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "69"
+						},
+						{
+							"id" : "41",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c12/ea7c942591e74449a58d3bc84b00b3c7.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "299"
+						},
+						{
+							"id" : "42",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27556/36487180106448d2ad3933b8762631d4.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "69"
+						}
+					]
+				}
+			},
+			{
+				"title" : "3F 服装美饰",
+				"left" : {
+					"up" : {
+						"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/620ebfbce9b941da8e28c50cccbd76e5.jpg",
+						"href":"../html/list.html",
+						"id":"43"
+					},
+					"down" : {
+						"img" : [
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/994ce351e16b4f79b0dd57b15a86671c.jpg", 
+							"href":"../html/list.html",
+							"id":"44"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/6751ea5767cd45ffb920c974a8d7d94f.jpg", 
+							"href":"../html/list.html",
+							"id":"45"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/c9448bc0173b418aa4f615a5c9224259.jpg", 
+							"href":"../html/list.html",
+							"id":"46"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/92a851739165423db9be5c5f1be49640.jpg", 
+							"href":"../html/list.html",
+							"id":"47"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/41a07b9a65de4fb3ba5c6c2ce96b997b.jpg", 
+							"href":"../html/list.html",
+							"id":"48"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/92d52be226864c88878b8450e125ea5b.jpg", 
+							"href":"../html/list.html",
+							"id":"49"}
+						]
+					}
+				},
+				"middle" : {
+					"up" : {
+						"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/a4c389fe910d49309079f181140ff827.jpg",
+						"href":"../html/detail.html",
+						"id":"50"
+					},
+					"down" : {
+						"img" : [
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/d7ab6c1ea0794cf6b9cf625bc6da34a7.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"51"
+							},
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/af4099677bab4ddfadfb5db77b939b6d.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"52"
+							},
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/c1516efd5a3046c1b8eff10e2c955a4f.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"53"
+							}
+						]
+					}
+				},
+				"right" : {
+					"title" : "本月热销榜",
+					"data" : [
+						{
+							"id" : "54",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29bae/fa52b11b764e4621a801bff782a90059.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "298"
+						},
+						{
+							"id" : "55",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c12/ea7c942591e74449a58d3bc84b00b3c7.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "299"
+						},
+						{
+							"id" : "56",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27556/36487180106448d2ad3933b8762631d4.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "69"
+						},
+						{
+							"id" : "57",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c12/ea7c942591e74449a58d3bc84b00b3c7.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "299"
+						},
+						{
+							"id" : "58",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27556/36487180106448d2ad3933b8762631d4.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "69"
+						}
+					]
+				}
+			},
+			{
+				"title" : "4F 食品保健",
+				"left" : {
+					"up" : {
+						"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/620ebfbce9b941da8e28c50cccbd76e5.jpg",
+						"href":"../html/list.html",
+						"id":"59"
+					},
+					"down" : {
+						"img" : [
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/994ce351e16b4f79b0dd57b15a86671c.jpg", 
+							"href":"../html/list.html",
+							"id":"60"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/6751ea5767cd45ffb920c974a8d7d94f.jpg", 
+							"href":"../html/list.html",
+							"id":"61"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/c9448bc0173b418aa4f615a5c9224259.jpg", 
+							"href":"../html/list.html",
+							"id":"62"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/92a851739165423db9be5c5f1be49640.jpg", 
+							"href":"../html/list.html",
+							"id":"63"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/41a07b9a65de4fb3ba5c6c2ce96b997b.jpg", 
+							"href":"../html/list.html",
+							"id":"64"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/92d52be226864c88878b8450e125ea5b.jpg", 
+							"href":"../html/list.html",
+							"id":"65"}
+						]
+					}
+				},
+				"middle" : {
+					"up" : {
+						"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/a4c389fe910d49309079f181140ff827.jpg",
+						"href":"../html/detail.html",
+						"id":"66"
+					},
+					"down" : {
+						"img" : [
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/d7ab6c1ea0794cf6b9cf625bc6da34a7.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"67"
+							},
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/af4099677bab4ddfadfb5db77b939b6d.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"68"
+							},
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/c1516efd5a3046c1b8eff10e2c955a4f.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"69"
+							}
+						]
+					}
+				},
+				"right" : {
+					"title" : "本月热销榜",
+					"data" : [
+						{
+							"id" : "16",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29bae/fa52b11b764e4621a801bff782a90059.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "298",
+							"id":"70"
+						},
+						{
+							"id" : "71",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c12/ea7c942591e74449a58d3bc84b00b3c7.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "299"
+						},
+						{
+							"id" : "72",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27556/36487180106448d2ad3933b8762631d4.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "69"
+						},
+						{
+							"id" : "73",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c12/ea7c942591e74449a58d3bc84b00b3c7.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "299"
+						},
+						{
+							"id" : "74",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27556/36487180106448d2ad3933b8762631d4.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "69"
+						}
+					]
+				}
+			},
+			{
+				"title" : "5F 生活电器",
+				"left" : {
+					"up" : {
+						"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/620ebfbce9b941da8e28c50cccbd76e5.jpg",
+						"href" : "../html/list.html",
+						"id":"75"
+					},
+					"down" : {
+						"img" : [
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/994ce351e16b4f79b0dd57b15a86671c.jpg", 
+							"href":"../html/list.html",
+							"id":"76"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/6751ea5767cd45ffb920c974a8d7d94f.jpg", 
+							"href":"../html/list.html",
+							"id":"77"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/c9448bc0173b418aa4f615a5c9224259.jpg", 
+							"href":"../html/list.html",
+							"id":"78"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/92a851739165423db9be5c5f1be49640.jpg", 
+							"href":"../html/list.html",
+							"id":"79"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/41a07b9a65de4fb3ba5c6c2ce96b997b.jpg", 
+							"href":"../html/list.html",
+							"id":"80"
+						},
+							{"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27304/92d52be226864c88878b8450e125ea5b.jpg", 
+							"href":"../html/list.html",
+						"id":"81"}
+						]
+					}
+				},
+				"middle" : {
+					"up" : {
+						"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/a4c389fe910d49309079f181140ff827.jpg",
+						"href":"../html/detail.html",
+						"id":"82"
+					},
+					"down" : {
+						"img" : [
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/d7ab6c1ea0794cf6b9cf625bc6da34a7.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"83"
+							},
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/af4099677bab4ddfadfb5db77b939b6d.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"84"
+							},
+							{"src" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/299ad/c1516efd5a3046c1b8eff10e2c955a4f.jpg", 
+							 "href":"../html/detail.html",
+							 "id":"85"
+							}
+						]
+					}
+				},
+				"right" : {
+					"title" : "本月热销榜",
+					"data" : [
+						{
+							"id" : "21",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29bae/fa52b11b764e4621a801bff782a90059.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "298",
+							"id":"86"
+						},
+						{
+							"id" : "22",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c12/ea7c942591e74449a58d3bc84b00b3c7.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "299",
+							"id":"87"
+						},
+						{
+							"id" : "23",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27556/36487180106448d2ad3933b8762631d4.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "69",
+							"id":"88"
+						},
+						{
+							"id" : "24",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c12/ea7c942591e74449a58d3bc84b00b3c7.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "299",
+							"id":"89"
+						},
+						{
+							"id" : "25",
+							"img" : "http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27556/36487180106448d2ad3933b8762631d4.jpg",
+							"title" : "索能厨卫能量泡泡清洁套组",
+							"price" : "69",
+							"id":"90"
+						}
+					]
+				}
+			}
+		]
+	}
+}

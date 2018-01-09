@@ -1,0 +1,117 @@
+{
+
+	"data" : {
+		"modulesType":[
+			{
+				"mainlive":{
+					"moduleTitle":"限时抢购",
+					"moduleItems":[
+						{		
+							"ext":{
+								"id":1, 
+								"title":"德国·KNEIPP克奈圃 面膜礼盒5ml*6片", 
+								"salePrice":161.9,
+								"OriginalPrice":200,
+								"discount":"7折"
+							},							
+							"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/275ca/6d4c6206809843d592b4c083501722b2.jpg"
+						},
+						{
+							"ext":{	
+								"id":2, 
+								"title":"德国·KNEIPP克奈圃 眼霜15 ml", 
+								"salePrice":241.9,
+								"OriginalPrice":300,
+								"discount":"7折"
+								},						
+							"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/275c7/f570127b963e44e48485822334368a51.jpg"
+						},
+						{
+							"ext":{
+								"id":3,
+								"title":"嘉兰诺长款保暖毛衫连衣裙 黑色", 
+								"salePrice":59.9,
+								"OriginalPrice":160,
+								"discount":"3折"
+							},						
+							"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27436/e3467c395e464a71b399ae94f8306768.jpg"
+						},
+						{
+							"ext":{
+								"id":4,
+								"title":"精选黑枸杞 青海黑枸杞子 柴达木黑枸杞子", 
+								"salePrice":72,
+								"OriginalPrice":160,
+								"discount":"5折"
+							},						
+							"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c74/1c749a1db2ac47d9ae9b9a44919ffb35.jpg"
+						},
+						{
+							"ext":{
+								"id":5,
+								"title":"寻蔻年华 冬季新款女士珍珠兔毛帽子/ 纯色贝雷鸭舍", 
+								"salePrice":33.9,
+								"OriginalPrice":70,
+								"discount":"7折"
+							}, 					
+							"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c13/ea0b10373e294938a379bd69c4fd4e7a.jpg"
+						},
+						{
+							"ext":{
+								"id":6,
+								"title":"中粮 金盈杂粮 十二谷米伴侣 450g*4包", 
+								"salePrice":168,
+								"OriginalPrice":290,
+								"discount":"7折"
+							}, 						
+							"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29c7a/e9f9d8b49c404be18ddd9c2905233fec.jpg"
+						},
+						{
+							"ext":{
+								"id":7,
+								"title":"飘零大叔 综合果蔬脆片108g*5袋", 
+								"salePrice":55,
+								"OriginalPrice":73,
+								"discount":"7折"
+							}, 
+							
+							"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27565/36f9fa1e0b6b4883b3e506776b7444f2.jpg"
+						},
+						{
+							"ext":{
+								"id":8,
+								"title":"康尔馨 浴袍双层男女居家服秋冬季浴衣睡袍", 
+								"salePrice":329,
+								"OriginalPrice":420,
+								"discount":"7折"
+							}, 						
+							"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29b95/e398060204e24b95a1cbaeea2b4c0cb0.jpg"
+						},
+						{
+							"ext":{
+								"id":9,
+								"title":"普润 2只耐用水润防开裂硅胶脚后跟保护套", 
+								"salePrice":15,
+								"OriginalPrice":33,
+								"discount":"8折"
+							}, 
+							"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29b38/29a12d15765d4da792aef79e08dfd6dd.jpg"
+						},
+						{
+							"ext":{
+								"id":10,
+							 	"title":"澳洲原切菲力牛排 150g*8袋 送酱料黄油刀叉", 
+							 	"salePrice":55,						 	
+						 		"OriginalPrice":88,
+						 		"discount":"3折"
+						 	},
+						 	"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29a17/df94ddbd33394f19b5f2e235779d36fc.jpg"
+						}
+					]
+				}
+			}
+		]
+	}
+}
+		
+

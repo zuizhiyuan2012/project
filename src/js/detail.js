@@ -1,5 +1,5 @@
 require(["config"], function(){
-	require(["load"], function(){
+	require(["headerFooter"], function(){
 		
 	})
 });

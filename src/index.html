@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="/../../css/headerFooter.css">
+	<script src="/lib/requirejs/require.js" data-main="js/index"></script>
+</head>
+<body>
+	<div class="warp"></div>
+
+	<div class="main" id="mainContent">
+        <div class="rect">
+            <div class="fl" id="topThree">
+              
+
+	            <div class="banner">
+					<ul class="banner-slider"></ul>
+				</div>
+	            <div class="ad1"><a><img src="http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29b37/5a748c6c048942c89169cc0000c453e0.jpg" alt=""></a></div>     
+	            
+	        	<div class="ad2"><a><img src="http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29b32/6309406da2464f69b2b2b0e60f178a51.jpg" alt=""></a></div>
+	        </div>
+
+	        <div class="fr fr_02">
+	            <div class="per_conliset" style=" border 1px solid #e5e5e5; margin-bottom 10px;">
+	                <div class="personal" id="accountInfo">
+	                    <!--==未登录==-->
+	                    <div class="no">
+	                        <div class="hd">
+	                            <img src="https://image-mall.huijiayou.cn/hjyweb/img/dome_07.png" alt="">
+	                            <i>hi！欢迎来到家有购物</i>
+	                        </div>
+	                        <a class="dl" style="cursor:pointer;" href="html/login.html">登 录</a>
+	                        <p><a style="cursor:pointer;" href="html/register.html">免费注册</a></p>
+	                    </div>
+	                    <!--==已登录==-->
+	                    <div class="yes" style="display:none;">
+	                        <div class="hd" style="cursor:pointer;"><a><img id="headImg" src="" alt=""><i id="LoginName">hi！</i></a></div>
+	                        <ul>
+	                            <li><a>待收货<i id="DSH">0</i></a></li>
+	                            <li><a>待发货<i id="DFH">0</i></a></li>
+	                            <li><a>待付款<i id="DFK">0</i></a></li>
+	                        </ul>
+	                    </div>
+	                </div>
+	                <div class="conve-list">
+	                    <div class="hd">4008-678-210</div>
+	                    <ul>
+	                        <li><a style="cursor:pointer"><i class="i1"></i>直播<br>节目表</a></li>
+	                        <li><a href="/APP.html" style="cursor:pointer"><i class="i2"></i>掌上<br>购物</a></li>
+	                        <li><a style="cursor:pointer"><i class="i3"></i>物流<br>查询</a></li>
+	                        <li><a style="cursor:pointer"><i class="i4"></i>会员<br>中心</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <div class="goods-hd" id="rightAd">
+	            	<h2>
+	            		<span></span>
+	            	今日秒杀     10/20点准时开抢
+	            	</h2>
+	            	<ul>
+	            		<li>
+	            			<a><img src="http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29cdd/9eca2364ad0f45d7a0708dcdbc1d651e.jpg" alt=""><i>立即抢购</i>
+	            			</a>
+	            		</li>
+	            		<li><a><img src="http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29cdd/0c8a2ccca7124656a512ec5d03945387.jpg" alt=""><i>立即抢购</i></a></li>
+	            	</ul>
+	        	</div>
+        	</div>    
+		</div>
+		
+		<!--==限时抢购下的五张轮播图片==-->
+		<div class="purchase">
+			<ul class="live_list" id="live_list"></ul>
+		</div>
+       	<!--==五个主要框架==-->
+       	<div class="floors">
+       		
+       	</div>
+
+
+	</div>
+
+
+	
+	<div class="footer"></div>
+	
+	<script type="text/html" id="cate">	
+		{{each cat as element}}
+		<li>
+			<a href="html/detail.html">
+				<input type="hidden" name="" id="live" value="{{element.ext.id}}">
+				<img src="{{element.src}}" alt="">
+				<span>{{element.ext.discount}}</span>
+				<b>{{element.ext.title}}</b>
+				<font>￥{{element.ext.salePrice}}<i>￥{{element.ext.OriginalPrice}}</i></font>
+				<strong>立即抢购</strong>
+			</a>
+		</li>
+		{{/each}}
+	</script>
+
+	<script type="text/html" id="floor">
+		{{each floor as prod}}
+		<div class="floor">
+		<!--==左边、中间框架==-->
+            <div class="fl">
+                <div class="hd"><h2>{{prod.title}}</h2></div>
+                <div class="bd">
+                    <div class="left">
+                        <b> 
+                        	<input type="hidden" id="{{prod.left.up.id}}">                                  
+                			<a href="{{prod.left.up.href}}"><img src="{{prod.left.up.img}}" alt=""></a>          
+                		</b>
+		                <p>
+		                {{each prod.left.down.img as imgs}}
+		                <input type="hidden" id="{{imgs.id}}">                           
+			                <a href="{{imgs.href}}"><img src="{{imgs.src}}"></a>			            
+			            {{/each}}           
+		                </p>
+		            </div>
+		            <!--==中间框架==-->
+		            <div class="right">
+		            	<!--==中间大图==-->
+		                <div class="focus">
+		                	<input type="hidden" id="{{prod.middle.up.id}}">
+		                    <a class="hd"><img src="{{prod.middle.up.img}}"></a>
+		                </div>		                
+		                <!--==中间、下面小图==-->
+		            {{each prod.middle.down.img as middlesmall}}
+		            	<input type="hidden" id="{{middlesmall.id}}">
+		                <div class="ad3"><a href="middlesmall.href"><img src="{{middlesmall.src}}" alt=""></a></div>        
+			        {{/each}}
+            		</div>
+                </div>
+            </div>
+			<!--==热销排行榜==-->
+            <div class="fr selling">
+                <div class="hd"><h2>{{prod.right.title}}</h2></div>
+                <ul class="bd">
+            	{{each prod.right.data as ranks}}         
+                <li>
+                    <a>
+                       <input type="hidden" value="{{ranks.id}}">
+                       <img src="{{ranks.img}}">
+                       <b>{{ranks.title}}</b>
+                       <em>￥{{ranks.price}}</em>
+                    </a>
+                </li>
+            	{{/each}}
+                </ul>
+            </div>
+        </div>
+		{{/each}}
+	</script>
+
+
+</body>
+</html>
