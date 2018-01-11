@@ -46,21 +46,71 @@ require(["config"], function(){
 				});
 			}).done(function(){
 				
-				$(".purchase li").on("click", function(e){
-					e = e || event;
-				
-					$.cookie("id","",{path:"/"});
-
+				/*$(".purchase li").on("click", function(e){
 					var _id = $(e.target).parent().find("input").val();
-			
-					$.cookie("id",_id,{expires:7,path:"/"})
-					console.log($.cookie("id"))
-					location = "html/detail.html";
-				});
+					// console.log(_id)
+					// $.cookie("id","",{path:"/"});
+					var cart_id = $.cookie("id") ||[];
+					var cart_cookie = $.cookie("carts") || [];
+					var index = $.inArray(_id, cart_id);
+					if(index !== -1){
+						cart_cookie[currentIndex].amount++;
+					}else{
+						console.log(cart_id)
+						// cart_id.push(_id);
+						$.cookie("id",_id,{expires:7,path:"/"});
+					}
+
+					var currentIndex = $.inArray(_id, cart_cookie);
+					if(currentIndex !== -1){
+						cart_cookie[currentIndex].amount++;
+					}else{
+						var contrast = $.cookie("id")+"";
+
+						$.getJSON("../mock/live.json", function(resdata){
+							var contrastData = resdata.data.modulesType[0].mainlive.moduleItems;
+							
+							var arr=[],
+								xb=0;
+							$.each(contrastData,function(index,elements){
+								arr.push(`${elements.id}`);
+							})
+							
+							xb=$.inArray(contrast,arr);
+						
+							var cData = {products : resdata.data.modulesType[0].mainlive.moduleItems};
+
+							var array =[]
+							array.push(cData.products[xb]);
+					
+							var _src = array[0].src,
+								_title = array[0].title,
+								_price = array[0].salePrice,
+								_id = array[0].id,
+								_discount = array[0].discount,
+								_OriginalPrice = array[0].OriginalPrice,
+								_amount = 1;
+								
+							var cart = {
+									src : _src,
+									title : _title,
+									price : _price,
+									id : _id,
+									amount : _amount
+								};	
+							// cart_cookie.push(cart);
+						});
+					}
+					
+						$.cookie("id",_id,{expires:7,path:"/"});
+						$.cookie("carts", cart_cookie, {expires:7,path:"/"});
+					// console.log($.cookie("id"))
+					location = "html/detail.html";	
+				});*/
 			});
 		});
 	});
-});					// location = "html/detail.html";
+});					
 				/*$.cookie("products", "", {
 					path:"/"
 				});

@@ -90,7 +90,7 @@
 	<script type="text/html" id="cate">	
 		{{each cat as element}}
 		<li>
-			<a>
+			<a href="/html/detail.html?id={{element.id}}" target="_blank">
 				<input type="hidden" name="" id="live" value="{{element.id}}">
 				<img src="{{element.src}}" alt="">
 				<span>{{element.discount}}</span>

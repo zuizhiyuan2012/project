@@ -8,13 +8,23 @@ require(["config"], function(){
 				amount = _prod[0].amount;
 				console.log(price)*/
 			// $.cookie.json = true;
+
+
+		// 获取查询字符串
+		var queryString = location.search.slice(1);
+		// 从查询字符串中获取商品id
+		var result = /id=(\d+)&?/.exec(queryString);
+		var contrast = result ? result[1] : 1;
+		// 构建访问模拟数据的url
+		var url = `/mock/detail_${contrast}.json`;
 			//加载对应商品的数据
 		$.cookie.json = true;
 		//加载对应商品的数据
-		var contrast = $.cookie("id")+"";
+		// var contrast = $.cookie("id")+"";
 		// console.log(contrast)
-		$.getJSON("../mock/live.json", function(resdata){
-			var contrastData = resdata.data.modulesType[0].mainlive.moduleItems;
+
+		$.getJSON(url, function(resdata){
+			/*var contrastData = resdata.data.modulesType[0].mainlive.moduleItems;
 			
 			var arr=[],
 				xb=0;
@@ -27,7 +37,9 @@ require(["config"], function(){
 			var cData = {products : resdata.data.modulesType[0].mainlive.moduleItems};
 
 			var array =[]
-			array.push(cData.products[xb]);
+			array.push(cData.products[xb]);*/
+
+			var array = [resdata.res_body.data];
 	
 			var _src = array[0].src,
 				_title = array[0].title,
@@ -74,17 +86,17 @@ require(["config"], function(){
 					amount : _amount
 				};	
 			
-				$.cookie.json = true;
+				// $.cookie.json = true;
 				var cart_cookie = $.cookie("carts") || [];
-				var index = $.inArray(cart.id, cart_cookie);
-				if(index !== -1){
-					cart_cookie[index].amount++;
-				}else{
+				// var index = $.inArray(cart.id, cart_cookie);
+				// if(index !== -1){
+				// 	cart_cookie[index].amount++;
+				// }else{
 					cart_cookie.push(cart);
-				}
+				// }
 				
-				$.cookie("cart", cart_cookie,{expires:7,path:"/"});
-				location = "/../html/cart.html";
+				$.cookie("carts", cart_cookie, {expires:7,path:"/"});
+				location = "/html/cart.html";
 			});
 		});	
 	});

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>confirm</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/confirm.css">
+	<link rel="stylesheet" href="../css/headerFooter.css">
+	<script src="/lib/requirejs/require.js" data-main="../js/confirm"></script>
+</head>
+<body>
+	<div class="warp"></div>
+
+	<div class="main" id="mainContent">
+    <div class="order">
+    <div class="address">
+        <div class="hd"><span><a id="divAddressLogin" style="cursor:pointer">添加收货地址</a></span><h2>确认收货地址</h2></div>
+        <div class="bd">
+            <ul id="ulAddressList"></ul>
+            <div class="more" style="display:none">更多</div>
+        </div>
+    </div>
+    <div class="payment">
+        <div class="hd"><h2>支付方式</h2></div>
+        <div class="bd">
+            <dl>
+                <dt class="curr">
+                  <label for="rd_zxzf">
+                    <input id="rd_zxzf" type="radio" name="radio1" checked="" value="" >在线支付
+                  </label>
+                </dt>
+                <dd id="quan">
+                  <p id="p1">
+                    <a class="curr"><i></i><img src="../img/bank-65.jpg" alt="支付宝"></a>
+                    <a><i></i><img src="../img/bank-76.jpg" alt="微信"></a>
+                    <a><i></i><img src="../img/bank-62.jpg" alt="银联支付"></a>
+                  </p>
+                  <p id="p2">
+                    <a><i></i><img src="../img/bank-1.jpg" alt="招商银行"></a>
+                    <a><i></i><img src="../img/bank-2.jpg" alt="建设银行"></a>
+                    <a><i></i><img src="../img/bank-3.jpg" alt="工商银行"></a>
+                    <a><i></i><img src="../img/bank-42.jpg" alt="兴业银行"></a>
+                    <a><i></i><img src="../img/bank-47.jpg" alt="交通银行"></a>
+                    <a><i></i><img src="../img/bank-49.jpg" alt="北京农村商业银行"></a>
+                    <a><i></i><img src="../img/bank-69.jpg" alt="中国银行"></a>
+                    <a><i></i><img src="../img/bank-86.jpg" alt="农业银行"></a>
+                    <a><i></i><img src="../img/bank-70.jpg" alt="中信银行"></a>
+                    <a><i></i><img src="../img/bank-94.jpg" alt="平安银行"></a>
+                    <a><i></i><img src="../img/bank-901.jpg" alt="民生银行"></a>
+                  </p><span>更多</span>
+                </dd>
+                <dt style="display:none"><label for="rd_hdfk"><input id="rd_hdfk" type="radio" name="radio1" value="" >货到付款</label></dt>
+            </dl>
+        </div>
+    </div>
+    <div class="bill">
+        <div class="hd"><h2>如需索要发票请联系客服 010-83035758</h2></div>
+        <div class="bd"></div>
+        </div>
+        <div class="confirm">
+            <div class="hd"><h2>订单确认</h2></div>
+            <div class="bd">
+                <ul id="ulGoodsList">
+                   
+                </ul>
+                <p id="spcost_money">商品总金额：￥477.00</p>
+            </div>
+            <div class="ft">
+                <ul>
+                    <li>
+                        <label>优惠券</label>
+                        <select id="selCoupon">
+                            <option selected="selected" value="">不使用优惠券</option>
+                            <option>6元</option><option>30元</option>
+                            <option>60元</option></select>
+                        <a id="btnOpenyhq" class="dhxj" style="cursor:pointer">兑换新劵</a>
+                        <a id="divyhq" class="ckqb" style="cursor:pointer;">查看全部优惠券</a>
+                        <p id="p_yhq" style="display:none">
+                            <input type="text" value="" placeholder="请输入优惠券兑换码" id="txtExchange">
+                            <a style="cursor:pointer;" id="btnExchange">兑 换</a>
+                            <span id="spanExchange" style="display:none">请输入优惠码</span>
+                        </p>
+                    </li>
+                    <li>
+                        <label>暂存款</label>
+                        <input type="text" value="0" class="input" id="txt_TemporaryStore">
+                        <span id="span_TemporaryStore" style="display:none">本次可用最大值￥0</span>
+                        <font>(可用<i id="">￥0</i>,您有<i id="">￥0</i>,仅限直播品)</font>
+                    </li>
+                    <li>
+                        <label>储值金</label>
+                        <input type="text" value="0" class="input" id="txt_StoreGold">
+                        <span id="span_StoreGold" style="display:none">本次可用最大值￥0</span>
+                        <font>(可用<i id="i_StoreGoldCanUse">￥0</i>,您有<i id="i_StoreGold">￥0</i>,仅限直播品)</font>
+                    </li>
+                    <li style="display:none">
+                        <label><input type="checkbox" id="rd_Point">积分</label>
+                        <input type="text" value="" class="input" id="txt_Point" disabled="">
+                        <span id="span_Point" style="display:none">本次可用0点</span>
+                        <font>(您有<i id="i_Point">0点积分</i>可用)</font>
+                    </li>
+                    <li id="li_fullcut" style="display: none;">
+                        <label><input type="radio" value="" checked="">满减</label>
+                        满减总金额：<strong id="st_fullcut"></strong>
+                    </li>
+                </ul>
+                <div class="total">优惠总金额：<i id="spsub_money">￥0.00</i></div>
+            </div>
+            <div class="pay">
+                <i id="i_sent_money">运费：￥0.00</i>
+                <p>实付款：<b id="b_pay_money">￥477.00</b></p>
+                <span><a id="btnBackCart" class="fh" style="cursor:pointer">返回购物车</a><a id="btnOrderCreate" class="tj" style="cursor:pointer">提交订单</a></span>
+            </div>
+        </div>
+    </div> 
+  </div>
+  
+
+  <div id="div_address" class="add_pop" style="z-index: 9000;" module="202041">
+        <i></i>
+        <div class="cont">
+            <h2><a style="cursor:pointer" class="close">关闭</a><span>添加收货地址</span></h2>
+            <ul>
+                <li><b><em>*</em>收货人：</b><input type="text" value="" id="txtName"><span style="display: none;"></span></li>
+                <li>
+                    <b><em>*</em>所在地区：</b>
+                    <select id="selProv"></select>
+                    <select id="selCity"><option value="">请选择</option></select>
+                    <select id="selDistrict"><option value="">请选择</option></select><span style="display: none;"></span>
+                </li>
+                <li><b><em>*</em>详细地址：</b><input type="text" value="" class="text" id="txtAddressDetail"><span style="display: none;"></span></li>
+                <li><b>邮编：</b><input type="text" value="" id="txtPostcode"><span style="display: none;"></span></li>
+                <li><b><em>*</em>联系电话：</b><input type="text" value="" id="txtPhoneNo"><span style="display: none;"></span></li>
+                <li>
+                    <b><em></em>身份证号：</b><input type="text" value="" id="txtIDno"><span style="display: none;"></span>
+                    <p>提示：购买海外商品，海关需验证收货人身份证信息，请填写与收货人姓名一致的身份证号！否则将下单失败！</p>
+                </li>
+                <li>
+                    <b><em>*</em>设置默认地址：</b><label><input type="radio" value="1" name="isdefault" id="isdefault_1">是</label><label><input type="radio" name="isdefault" value="0" id="isdefault_0">否</label>
+                    <span id="disSave" style="display:none;"></span>
+                </li>
+                <li class="curr"><a id="btn_saveaddress">保存收货地址</a><input type="hidden" id="txtAid" value=""><input type="hidden" id="txtEmail" value=""></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="footer"></div>
+    <script type="text/html" id="confirm">
+        {{each con as elements}}
+            <li>
+                <a style="cursor:pointer;"><img src="{{elements.src}}" alt="" width="83" height="83">
+                    <b>{{elements.title}}</b>
+                    <div class="tipWrap">
+                        <span class="sevenday" style="background: url(http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29cd6/7984ea16eb2b484d9dff395c71b7af8d.png) no-repeat left top;background-size: 20px auto;">支持7日无理由退货
+                        </span>
+                    </div>
+                    <span>颜色：共同<i>款式：共同</i></span>
+                </a>
+                <font class="f1"><b>￥{{elements.price}}</b></font><font class="f2">x{{elements.amount}}</font>
+                <font class="f3"><span>￥{{elements.amount * elements.price}}</span></font>
+            </li>
+        {{/each}}
+    </script>
+</body>
+</html>

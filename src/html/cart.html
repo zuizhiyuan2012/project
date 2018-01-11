@@ -10,10 +10,6 @@
 </head>
 <body>
 	<div class="warp"></div>
-
-	<div class="main" id="mainContent">
-        </div>
-
     <div class="trolley" id="divCart" style="">
     <h2><i>包邮</i><span id="spanTitle">所有商品全场包邮(西藏、新疆、青海地区除外)</span></h2>
     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="tbCartList">
@@ -26,75 +22,58 @@
                 </th>
                 <th width="560"><span>商品</span></th>
                 <th width="125">单价( 元）</th>
-                <th width="150">数量</th><th width="105">小计（元）</th>
-                <th width="102">操作</th></tr><tr id="tr_138095_138095" class="curr">
-                    <td width="60">
-                        <input type="checkbox" name="" id="cb_138095_138095" checked="">
-                    </td>
-                    <td width="560" colspan="2">
-                        <a><img src="http://image-family.huijiayou.cn/cfiles/staticfiles/upload/24b2d/04872b059c844c9ba9118d4abf273964.jpg" alt="" width="83" height="83">
-                            <p><font></font>
-                                <b>吉优百优质植绒衣架30只装</b>
-                            </p><strong>颜色：共同<br>款式：共同</strong>
-                        </a>
-                        <input type="hidden" id="hidName_138095_138095" value="吉优百优质植绒衣架30只装">
-                        <input type="hidden" id="hidNum_138095_138095" value="1">
-                        <input type="hidden" id="hidPrice_138095_138095" value="129"><input type="hidden" id="hidlimit_138095_138095" value="99">
-                        <input type="hidden" id="hidPriceUnit_138095_138095" value="129"></td><td width="125">
-                            <span>129.00</span>
-                    </td>
-                    <td width="150">
-                        <label><i style="cursor:pointer" id="i_sub_138095_138095" class="curr">-</i>
-                            <input id="txtSkuNum_138095_138095" type="tel" value="1">
-                            <i style="cursor:pointer" id="i_add_138095_138095" >+</i>
-                        </label><br>
-                        <span class="s2">限购99件</span>
-                    </td>
-                    <td width="105">
-                        <span class="s1">129.00</span>
-                    </td>
-                    <td width="102">
-                        <a style="cursor:pointer" class="del">删除</a>
-                    </td>
-                </tr>
-                <tr id="tr_7016114941_7019175515" class="curr">
-                    <td width="60">
-                        <input type="checkbox" name="" id="cb_7016114941_7019175515"  checked=""></td>
-                    <td width="560" colspan="2">
-                        <a><img src="http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29ae5/b455ed6f2230457fb0d942cab425d08b.jpg" alt="" width="83" height="83">
-                            <p><font></font><b>贵州茅台酒厂黔茅古酱牌原浆酒100ml*12瓶整箱特价秒杀</b>
-                            </p><strong>颜色：共同<br>款式：共同</strong>
-                        </a>
-                        <input type="hidden" id="hidName_7016114941_7019175515" value="贵州茅台酒厂黔茅古酱牌原浆酒100ml*12瓶整箱特价秒杀">
-                        <input type="hidden" id="hidNum_7016114941_7019175515" value="1">
-                        <input type="hidden" id="hidPrice_7016114941_7019175515" value="348">
-                        <input type="hidden" id="hidlimit_7016114941_7019175515" value="99">
-                        <input type="hidden" id="hidPriceUnit_7016114941_7019175515" value="348">
-                    </td>
-                    <td width="125"><span>348.00</span></td>
-                    <td width="150"><label>
-                        <i style="cursor:pointer" id="i_sub_7016114941_7019175515" class="curr">-</i>
-                        <input id="txtSkuNum_7016114941_7019175515" type="tel" value="1"><i style="cursor:pointer" id="i_add_7016114941_7019175515" >+</i>
-                    </label><br><span class="s2">限购99件</span>
-                </td>
-                <td width="105"><span class="s1">348.00</span></td>
-                <td width="102"><a style="cursor:pointer" class="del">删除</a></td>
+                <th width="150">数量</th>
+                <th width="105">小计（元）</th>
+                <th width="102">操作</th>
             </tr>
         </tbody>
     </table>
-    <h3 id="h3_invalid" style="display: none;">您的购物车内已有<span id="spinvalidnum">0</span>款商品失效<a id="btnClear" style="cursor: pointer; display: none;" num="202048-1">清除失效商品</a></h3>
+
+    <script type="text/html" id="carts">
+      {{each cart as elements}}
+      <tr id="" class="curr">
+          <td width="60">
+              <input type="checkbox" name="" id="{{elements.id}}" checked="" class="cbseletall">
+          </td>
+          <td width="560" colspan="2">
+              <a><img src="{{elements.src}}" alt="" width="83" height="83">
+                  <p><font></font>
+                      <b>{{elements.title}}</b>
+                  </p><strong>颜色：共同<br>款式：共同</strong>
+              </a>
+            </td>
+          <td width="125">
+              <span>{{elements.price}}</span>
+          </td>
+          <td width="150">
+              <label>
+                  <i style="cursor:pointer" id="" class="curr jian">-</i>
+                  <input id="tel" type="text" value="{{elements.amount}}">
+                  <i style="cursor:pointer" id="" class="jia">+</i>
+              </label><br>
+              <span class="s2">限购99件</span>
+          </td>
+          <td width="105">
+              <span class="s1">{{elements.price}}</span>
+          </td>
+          <td width="102">
+              <a style="cursor:pointer" class="del">删除</a>
+          </td>
+      </tr>
+      {{/each}}
+    </script>
+    <h3 id="h3_invalid" style="display: none;">您的购物车内已有<span id="spinvalidnum">0</span>款商品失效<a id="btnClear" style="cursor: pointer; display: none;">清除失效商品</a></h3>
     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="tbCartInvalid"></table>
     <div class="ft" id="ft_01" style="left: 0px; bottom: 0px;">
         <div class="ft_nei">
             <span>
-                已选择<i id="sp_total">2</i>件商品<!--<font>总计：<b id="sp_price"></b><font id="font_money"></font></font>-->
-
+                已选择<i id="sp_total">2</i>件商品
                 <font id="total_money"></font> <font id="discount_money"></font><font>
                     应付款：<b id="pay_money">￥477.00</b>
                 </font>
                 <a id="btnSubmit" style="cursor:pointer" num="202048-2">去结算</a>
             </span>
-            <label><input id="cbseletall_foot" type="checkbox" value="" num="202048-input-1">全选</label><a id="btnDel" style="cursor:pointer;" num="202048-3">删除选中的商品</a>
+            <label><input id="cbseletall_foot" type="checkbox" value="">全选</label><a id="btnDel" style="cursor:pointer;">删除选中的商品</a>
         </div>
     </div>
     <div id="ft_02" style="height: 112px; background: rgb(255, 255, 255); display: none;"></div>

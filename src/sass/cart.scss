@@ -1,0 +1,354 @@
+.trolley {
+    overflow: hidden;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+    .trolley h2 {
+        height: 55px;
+        line-height: 55px;
+        color: #333;
+        font-size: 12px;
+    }
+
+        .trolley h2 i {
+            display: block;
+            width: 35px;
+            height: 16px;
+            line-height: 16px;
+            font-size: 12px;
+            float: left;
+            background: url(../img/h2_bg.png) no-repeat;
+            padding-left: 5px;
+            color: #fff;
+            margin: 19px 8px 0 0;
+        }
+
+    .trolley table {
+        border: 1px solid #d6d6d6;
+    }
+
+    .trolley th {
+        border-bottom: 1px solid #d6d6d6;
+        height: 43px;
+        background: #f1f1f1;
+        font-weight: normal;
+        text-align: center;
+    }
+
+        .trolley th input {
+            margin-right: 12px;
+            position: relative;
+            top: 2px;
+        }
+
+        .trolley th span {
+            padding-right: 40px;
+        }
+
+    .trolley td {
+        height: 83px;
+        padding: 16px 0;
+        border-bottom: 1px solid #d6d6d6;
+        text-align: center;
+    }
+
+        .trolley td.tdd {
+            font-size: 12px;
+            color: #333;
+            border: 1px solid #fff;
+            border-bottom: 1px solid #d6d6d6;
+            height: 60px;
+            line-height: 50px;
+            padding: 0;
+            text-align: left;
+        }
+
+            .trolley td.tdd i {
+                display: inline-block;
+                width: 35px;
+                height: 16px;
+                background: #3fb35c;
+                color: #fff;
+                text-align: center;
+                line-height: 16px;
+                margin-right: 3px;
+            }
+
+        .trolley td a {
+            display: block;
+            height: 83px;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .trolley td a img {
+                width: 83px;
+                height: 83px;
+                float: left;
+                margin-right: 10px;
+            }
+
+            .trolley td a span {
+                display: none;
+            }
+
+            .trolley td a p {
+                float: left;
+                width: 300px;
+                margin-right: 50px;
+                text-align: left;
+            }
+
+                .trolley td a p font {
+                    display: block;
+                    height: 24px;
+                    overflow: hidden;
+                }
+
+                    .trolley td a p font i {
+                        margin-bottom: 0;
+                    }
+
+                .trolley td a p b {
+                    height: 30px;
+                    line-height: 15px;
+                    overflow: hidden;
+                    display: block;
+                    color: #333;
+                    font-size: 12px;
+                }
+
+                .trolley td a p em {
+                    display: block;
+                    line-height: 25px;
+                    color: #999;
+                }
+
+            .trolley td a strong {
+                float: left;
+                font-weight: normal;
+                padding-top: 24px;
+                width: 135px;
+                display: block;
+                line-height: 15px;
+                color: #999;
+                text-align: left;
+            }
+
+        .trolley td span {
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+        }
+
+            .trolley td span i {
+                display: block;
+            }
+
+            .trolley td span.s1 {
+                color: #dc0f50;
+            }
+
+        .trolley td label {
+            background: #fff;
+            display: inline-block;
+            width: 85px;
+            height: 24px;
+            border: 1px solid #cbcbcb;
+            overflow: hidden;
+        }
+
+            .trolley td label i {
+                display: inline-block;
+                width: 27px;
+                height: 24px;
+                line-height: 22px;
+                float: left;
+                text-align: center;
+                font-size: 18px;
+                color: #333;
+            }
+
+                .trolley td label i.curr {
+                    color: #cbcbcb;
+                }
+
+            .trolley td label input {
+                width: 28px;
+                float: left;
+                border-left: 1px solid #eaeaea;
+                text-align: center;
+                height: 24px;
+                line-height: 24px;
+                border-right: 1px solid #eaeaea;
+            }
+
+        .trolley td a.del {
+            display: inline;
+            font-size: 12px;
+            color: #333;
+        }
+
+        .trolley td span.s2 {
+            color: #e92d2f;
+            font-weight: normal;
+            font-size: 12px;
+        }
+
+    .trolley tr.curr td {
+        background: #fffceb;
+    }
+
+    .trolley h3 {
+        height: 52px;
+        padding-top: 10px;
+        line-height: 52px;
+        font-size: 12px;
+        color: #333;
+    }
+
+        .trolley h3 a {
+            padding: 0 0 0 15px;
+            color: #e92d2f;
+            text-decoration: underline;
+        }
+
+    .trolley tr.invalid td label i, .trolley tr.invalid td label input {
+        color: #999;
+    }
+
+    .trolley tr.invalid td span {
+        color: #999;
+    }
+
+    .trolley tr.invalid td a:hover b {
+        color: #333;
+    }
+
+    .trolley tr.invalid td a span {
+        display: block;
+        width: 83px;
+        height: 83px;
+        background: #000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        filter: alpha(opacity=40);
+        -moz-opacity: 0.4;
+        opacity: 0.4;
+        z-index: 1;
+    }
+
+.trolley .ft {
+    width: 1140px;
+    background: #FFF;
+    margin-bottom: 20px;
+    line-height: 52px;
+    height: 52px;
+    padding: 23px 0 23px 0px;
+    overflow: hidden;
+}
+
+.trolley .ft.botm {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0px;
+    box-shadow: 0 -1px 8px rgba(0,1,1,.08);
+    border-top: 1px solid #dadada;
+    z-index:9999;
+}
+.trolley .ft .ft_nei{width:1140px; margin:0 auto;}
+        .trolley .ft label {
+            display: block;
+            width: 75px;
+            float: left;
+            font-size: 14px;
+            color: #333;
+        }
+
+            .trolley .ft label input {
+                float: left;
+                margin: 20px 12px 0 0;
+            }
+
+        .trolley .ft a {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .trolley .ft span {
+            color: #999;
+            font-size: 18px;
+            float: right;
+            line-height: 68px;
+        }
+
+            .trolley .ft span i {
+                color: #dc0f50;
+            }
+
+            .trolley .ft span font {
+                padding-right: 15px;
+                padding-left: 5px;
+            }
+
+                .trolley .ft span font em {
+                    color: #3fb35c;
+                }
+
+                .trolley .ft span font b {
+                    font-size: 30px;
+                    color: #dc0f50;
+                    font-weight: bold;
+                }
+
+            .trolley .ft span a {
+                display: inline-block;
+                width: 120px;
+                height: 52px;
+                line-height: 52px;
+                background: #dc0f50;
+                text-align: center;
+                font-size: 20px;
+                color: #fff;
+                position: relative;
+                top: -14px;
+            }
+
+                .trolley .ft span a:hover {
+                    color: #fff;
+                }
+
+    .trolley td.tdd a {
+        display: inline;
+        color: #005fbe;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .trolley td.tdd span {
+        float: right;
+        font-weight: normal;
+    }
+
+        .trolley td.tdd span b {
+            font-size: 18px;
+            color: #3fb35c;
+        }
+
+.kong {
+    height: 150px;
+    text-align: center;
+    background: url(../img/gwc_kong.png) no-repeat center 111px;
+    padding-top: 300px;
+    line-height: 64px;
+    font-size: 14px;
+    color: #333;
+}
+
+    .kong a {
+        padding: 0 5px;
+        color: #005fbe;
+    }
