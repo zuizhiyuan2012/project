@@ -90,12 +90,12 @@
 	<script type="text/html" id="cate">	
 		{{each cat as element}}
 		<li>
-			<a href="html/detail.html">
-				<input type="hidden" name="" id="live" value="{{element.ext.id}}">
+			<a>
+				<input type="hidden" name="" id="live" value="{{element.id}}">
 				<img src="{{element.src}}" alt="">
-				<span>{{element.ext.discount}}</span>
-				<b>{{element.ext.title}}</b>
-				<font>￥{{element.ext.salePrice}}<i>￥{{element.ext.OriginalPrice}}</i></font>
+				<span>{{element.discount}}</span>
+				<b>{{element.title}}</b>
+				<font>￥{{element.salePrice}}<i>￥{{element.OriginalPrice}}</i></font>
 				<strong>立即抢购</strong>
 			</a>
 		</li>
@@ -111,13 +111,13 @@
                 <div class="bd">
                     <div class="left">
                         <b> 
-                        	<input type="hidden" id="{{prod.left.up.id}}">                                  
-                			<a href="{{prod.left.up.href}}"><img src="{{prod.left.up.img}}" alt=""></a>          
+                        	<input type="hidden" value="{{prod.left.up.id}}">                                  
+                			<a><img src="{{prod.left.up.img}}" alt=""></a>          
                 		</b>
 		                <p>
 		                {{each prod.left.down.img as imgs}}
-		                <input type="hidden" id="{{imgs.id}}">                           
-			                <a href="{{imgs.href}}"><img src="{{imgs.src}}"></a>			            
+		                	<input type="hidden" value="{{imgs.id}}">                           
+			                <a><img src="{{imgs.src}}"></a>			            
 			            {{/each}}           
 		                </p>
 		            </div>
@@ -125,13 +125,15 @@
 		            <div class="right">
 		            	<!--==中间大图==-->
 		                <div class="focus">
-		                	<input type="hidden" id="{{prod.middle.up.id}}">
+		                	<input type="hidden" value="{{prod.middle.up.id}}">
 		                    <a class="hd"><img src="{{prod.middle.up.img}}"></a>
 		                </div>		                
 		                <!--==中间、下面小图==-->
-		            {{each prod.middle.down.img as middlesmall}}
-		            	<input type="hidden" id="{{middlesmall.id}}">
-		                <div class="ad3"><a href="middlesmall.href"><img src="{{middlesmall.src}}" alt=""></a></div>        
+		            {{each prod.middle.down.img as middlesmall}}            	
+		                <div class="ad3">
+		                	<input type="hidden" value="{{middlesmall.id}}">
+		                	<a><img src="{{middlesmall.src}}" alt=""></a>
+		                </div>        
 			        {{/each}}
             		</div>
                 </div>
@@ -142,8 +144,8 @@
                 <ul class="bd">
             	{{each prod.right.data as ranks}}         
                 <li>
-                    <a>
-                       <input type="hidden" value="{{ranks.id}}">
+                	<input type="hidden" value="{{ranks.id}}">
+                    <a>      
                        <img src="{{ranks.img}}">
                        <b>{{ranks.title}}</b>
                        <em>￥{{ranks.price}}</em>

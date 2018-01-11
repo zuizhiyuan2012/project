@@ -11,9 +11,174 @@
 <body>
 	<div class="warp"></div>
 
-	<div class="main" id="mainContent">
+	<div class="main" id="mainContent"><div class="details">
+    <h2><a id="btnAllProduct" style="cursor:pointer">全部商品</a><span id="span_Category"></span></h2>
+    <div class="show">
+        <div class="fl">
+            <div class="small">
+                <!--====class="up curr"为不可点击状态，如没有curr是正常可点击状态====-->
+                <a class="up curr"></a>
+                <div style="position:relative;height:444px;overflow:hidden;">
+                    <ul id="ulSlider" style="position:absolute;"><li><img src=""></li><li><img src=""></li><li><img src=""></li><li><img src=""></li></ul>
+                </div>
+                <!--====class="down curr"为不可点击状态，如没有curr是正常可点击状态====-->
+                <a class="down curr"></a>
+            </div>
+            <div class="big" id="big">
+                <img id="mainImg" alt="" src="">
+                <i id="isSoldOut" style="display:none">售 罄</i>
+                <a href="#" style="display:none">图片展示</a>
+                <b class="big_mask" id="big_mask" style="display: block; left: 85px; top: 51px;"></b>
+				<span id="sc" class="collection">收藏</span>
+            </div>
+        </div>
+        <div class="b" id="b" style="display: block;">
+            <img src="" style="left: -110.5px; top: -66.3px;">
+        </div>
+        <div class="fr">
+            <h3 id="productName">富贵美 幸运树耳钉（颜色可选）</h3>
+            <div class="bd">
+                <p class="price"><b>¥59.90</b><em>¥99.00</em><a class="goShop" style="cursor:pointer" href="" target="_blank">进入店铺</a></p>
+                <p class="num"><b>商品编号</b><span>7016102809</span></p>
+                <p class="shou"><b>月销</b><span>6件</span></p>
+                <div class="song clearfix" id="addressSelect" style="display:none;">
+                    <b class="song_lab">送货区域</b>
+                    <div class="songAddr">
+                        <span class="songAddr_cur" id="defaultAddress" cityid="0"></span>
+                        <span class="songAddr_btn"></span>
+                    </div>
+                    <div class="good_tip" id="tipMessage" style="display:none;">
+                        <span class="please" style="display:none;">请选择配送区域！</span>
+                        <span class="you" style="display:none;">有货</span>
+                        <span class="wu" style="display:none;">无货</span>
+                    </div>
+                    <div class="song_dialog">
+                        <span class="dia_close"></span>
+                        <p class="dia_addr"><label>常用地址 ：</label><span id="usedAddress"></span></p>
+                        <ul class="dia_addr_select clearfix" id="addressNav">
+                            <li id="selectProvince">
+                                <b>选择省</b>
+                                <i></i>
+                            </li>
+                            <li id="selectCity">
+                                <b>选择市</b>
+                            </li>
+                        </ul>
+                        <ul class="dia_addr_list clearfix" id="addressContent"></ul>
+                    </div>
+                </div>
+                <p class="gift" id="promotion" style="display: none;"><b>促销</b><span></span></p>
+                <div class="duo" id="more" style="display: none;">更多</div>
+                <!-- class="dui"是正常情况下 -->
+                <div class="dui" id="div_productinfo">
+                    <div class="tips" id="divProductProperty"></div>
+                    <div id="divPropertyList"><p class="option" index="0"><b>颜色</b><font><a class="">金色</a><a class="">银色</a></font></p><p class="option" index="1"><b>款式</b><font><a class="">共同</a></font></p></div>
+                    <p class="number"><b>购买数量</b><label><a class="jian">-</a><input type="text" id="buycount" value="1"><a class="jia">+</a></label><span></span></p>
+                </div>
+                <p class="list" id="pAuthorityLogo"><span class="s1" style="background: url(http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29cd6/f2393a417fcf4a3d971aefcfcee1da2b.png) no-repeat left top;background-size: 20px auto;">包邮</span><a href="/IndexMain.html?u=SellerInfo&amp;pid=7016102809" target="_blank" ><span class="s1" style="background: url(http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29cd6/c091b1516a0948b89ffe0879fdf03ca6.png) no-repeat left top;background-size: 20px auto;">正品保障</span></a><span class="s1" style="background: url(http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29cd6/7984ea16eb2b484d9dff395c71b7af8d.png) no-repeat left top;background-size: 20px auto;">支持7日无理由退货</span></p>
+                <div class="btn">
+                    <a operate="addtocart" id="btnAddShoppingCart" class="a2" style="cursor: pointer;">加入购物车</a>
+                    <a operate="orderconfim" id="btnBuy" class="a1" style="cursor: pointer;" >立即购买</a>
+                    <a id="mainseckillbuy" class="star" operate="orderconfim" style="cursor:pointer;display:none; width:260px">立即购买</a>
+					<!--下面的收藏、进入店铺改了设计位置，这个作废-->
+                    <!--span id="sc">收藏</span-->
+                    <!--span id="sc" class="in"><i></i>进入店铺</span-->
+					<b id="btnPhone" class="serviceTel" style="display:none">拨打<i>4008-678-888</i>，可语音下单~</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <ul class="hd" id="nav" style="width: 320px;">
+            <li class="curr">商品详情</li>
+            <li>规格参数</li>
+            <li id="commonProblem" style="display: none;">常见问题</li>
+            <li style="display:none" >商品评价<span class="gj" id="reviewCount">（1）</span></li>
+        </ul>
+        <div class="bd" id="u_cont">
+            <div class="img" id="topNinePropertyInfo">
+                <p style="display:none"><a id="MorePropertyInfo">更多参数&gt;&gt;</a></p>
+                <span class="tu" id="productImgContent"><img src="" style="width:100%"><img src="" style="width:100%"><img src="" style="width:100%"><img src="" style="width:100%"><img src="" style="width:100%"><img src="" style="width:100%"><img src="" style="width:100%"><img src="" style="width:100%"><img src="" style="width:100%"><img src="" style="width:100%"></span>
+                <span class="frome" id="span_sellerCompanyName">河南仕诚贝德商贸有限公司</span>
+            </div>
+            <div class="table" id="ulProductPropertyInfo"><ul><li><b>【商品编码】</b><span>7016102809</span></li><li><b>【品牌】</b><span>富贵美</span></li><li><b>【品名】</b><span>幸运树耳钉</span></li><li><b>【材质】</b><span>铜+合成氧化立方锆石</span></li><li><b>【颜色】</b><span>金色/银色</span></li><li><b>【尺寸】</b><span>1.5*1.5cm</span></li></ul></div>
+            <div class="qa" id="commonProblemContent" style="display: none;">
+            </div>
+            <div class="gj_wrap" id="reviewContent" style="display:none;">
+                <ul class="gj_radio clearfix" id="gradeType">
+                    <li gradetype="all">
+                        <input id="ra_01" checked="checked" name="judged" type="radio"><label for="ra_01">全部(1)</label>
+                    </li>
+                    <li gradetype="good">
+                        <input id="ra_02" name="judged" type="radio"><label for="ra_02">好评(0)</label>
+                    </li>
+                    <li gradetype="middle">
+                        <input id="ra_03" name="judged" type="radio"><label for="ra_03">中评(1)</label>
+                    </li>
+                    <li gradetype="bad">
+                        <input id="ra_04" name="judged" type="radio"><label for="ra_04">差评(0)</label>
+                    </li>
+                    <li gradetype="pic">
+                        <input id="ra_05" name="judged" type="radio"><label for="ra_05">有图(0)</label>
+                    </li>
+                </ul>
+                <ul class="gj_list" style="" id="reviewList">
+    <li class="gj_list_li clearfix">
+        <div class="gj_list_head">
+            <div class="gj_list_img"><img src=""></div>
+            <p class="gj_list_tel">150****1533</p>
+            <p class="gj_list_time">2017-10-06</p>
+        </div>
+        <div class="gj_list_main">
+            <p class="gj_list_con">
+                感觉被骗一样这么小上当
+            </p>
+            <div class="com_imgs_up ">
+                <ul class="com_imgs clearfix">
+                    
+                </ul>
+                <div class="img2big" style="display:none;">
+                    <img src="">
+                    <span class="img_delete2">删除</span>
+                </div>
+            </div>
+            <div class="gj_list_btm">
+                <p class="gj_list_btmTxt">[惠家抱抱]：感谢您将遇到的问题反馈给我们，也感谢您能在百忙之中接听电话并认可我们的处理方式^_^，我们将不断完善，相信我们一直都在努力！若之后有问题可直接拨打客服电话，我们会竭尽全力您解决。</p>
+                <p class="gj_list_btmTime">回复于2017-10-09</p>
+            </div>
+        </div>
+        <div class="gj_list_star">
+            <ul class="com_star clearfix">
+                <li class="on"></li><li class="on"></li><li class=""></li><li class=""></li><li class=""></li>
+            </ul>
+            <p>款式：银色</p>
+            <!--<p>样式:粉红色</p>
+            <p>规格:S</p>-->
+        </div>
+    </li>
+</ul>
+                <div class="pag gj_page" id="reviewPage" style="margin-bottom:0px;text-align:unset;"><span id="PaginationTB"><a style="cursor:pointer" class="curr"><span id="spprev">上一页</span></a><a style="cursor:pointer" class="curr">1</a><a style="cursor:pointer" class="curr"><span id="spnext">下一页</span></a></span><span id="PageSet"><em>共1页 到第<input id="txtPageCount" type="text" value="1">页</em><a style="cursor:pointer">确定</a></span></div>
+                <!--<ul class="gj_page" style="display:none" id="reviewPage">
+                    <li class="pre_page"><b>上一页</b></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li class="gj_page_s">...</li>
+                    <li>8</li>
+                    <li class="next_page"><b>下一页</b></li>
+                </ul>-->
+                <div class="nogjWrap" id="reviewNo" style="display:none;">
+                    <div class="nogjImg"><img src=""></div>
+                    <div class="nogjCon" id="noMessage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-	</div>
+</div>
 
 	<div class="footer"></div>
 </body>

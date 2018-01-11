@@ -103,6 +103,12 @@
                     background-position: 0 -80px;
                     color: #dc0f50;
                 }
+                img{
+                    display: block;
+                    /* margin-bottom: 20px; */
+                    height: 460px;
+                    width: 460px;
+                }
             }
         }
         .fr {
@@ -124,7 +130,7 @@
                     font-size: 16px;
                     line-height: 26px;
                     height: 27px;
-                    background: url(../img/plane_bg.png) no-repeat;
+                    /*background: url(../img/plane_bg.png) no-repeat;*/
                     padding-left: 26px;
                     margin: 2px 3px 0 0;
                 }
@@ -238,7 +244,7 @@
                             display: inline-block;
                             width: 20px;
                             height: 20px;
-                            background: url(../img/wenti.png) no-repeat;
+                            /***background: url(../img/wenti.png) no-repeat;**/
                             margin: 0 10px;
                             position: relative;
                             top: 3px;
@@ -412,37 +418,48 @@
                         color: #666;
                         float: left;
                     }
+                    a.jian{
+                        display: block;
+                        width: 15px;
+                        height: 20px;
+                        overflow: hidden;
+                        float: left;
+                        background: url(../img/jia_jian.png) no-repeat;
+                        text-indent: -999em;
+                        border:1px solid #d6d5d3;
+                    }
+                    a.jia{
+                        display: block;
+                        width: 15px;
+                        height: 20px;
+                        overflow: hidden;
+                        float: left;
+                        background: url(../img/jia_jian.png) no-repeat;
+                        text-indent: -999em;
+                        background-position: 0 -20px;
+                        border:1px solid #d6d5d3;
+                    }
+                    #buycount{
+                        width: 44px;
+                        padding: 0 5px;
+                        border-top: 1px solid #d6d5d3;
+                        border-bottom:1px solid #d6d5d3;
+                        float: left;
+                        text-align: center;
+                        line-height: 20px;
+                        height: 20px;
+                        color: #666;
+                        font-size: 12px;
+                                 
+                    }
                     laber{
                         margin-right: 12px;
                         display: block;
                         width: 86px;
                         height: 20px;
                         float: left;
-                        border: 1px solid #d6d5d3;
-                        a{
-                            display: block;
-                            width: 15px;
-                            height: 20px;
-                            overflow: hidden;
-                            float: left;
-                            background: url(../img/jia_jian.png) no-repeat;
-                            text-indent: -999em;
-                            &.jia{
-                                background-position: 0 -20px;
-                            }
-                        }
-                        input {
-                            width: 44px;
-                            padding: 0 5px;
-                            border-left: 1px solid #d6d5d3;
-                            float: left;
-                            text-align: center;
-                            line-height: 20px;
-                            height: 20px;
-                            color: #666;
-                            font-size: 12px;
-                            border-right: 1px solid #d6d5d3;
-                        }
+                        border: 1px solid #d6d5d3;    
+                                         
                         span {
                             float: left;
                             color: #666;

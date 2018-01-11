@@ -44,18 +44,77 @@ require(["config"], function(){
 
 					$(".floors").html(html);
 				});
-			});	
+			}).done(function(){
+				
+				$(".purchase li").on("click", function(e){
+					e = e || event;
+				
+					$.cookie("id","",{path:"/"});
 
-			$(".main .floors").on("click", function(){
-				$.cookie("products", "", {
-					path:"/"
+					var _id = $(e.target).parent().find("input").val();
+			
+					$.cookie("id",_id,{expires:7,path:"/"})
+					console.log($.cookie("id"))
+					location = "html/detail.html";
 				});
-
-				var _pro = $(this);
-				console.log(this);
-				
-				
 			});
 		});
 	});
-});
+});					// location = "html/detail.html";
+				/*$.cookie("products", "", {
+					path:"/"
+				});
+			
+				// var product = [];
+				if(e.target.tagName == "EM"){
+					var _price = $(e.target).html();
+					console.log($(e.target).html())
+					// product.price = _price;
+
+				}else if(e.target.tagName == "B" && $(e.target).parent().is("a")){
+					var _title = $(e.target).html();
+					
+				}else if(e.target.tagName == "IMG"){
+					var _imgs = $(e.target).attr("src");
+					var _id = $(e.target.parentNode.previousElementSibling).val();
+				}
+				
+				if(e.target.tagName == "EM"
+					|| e.target.tagName == "B" && $(e.target).parent().is("a")
+					|| e.target.tagName == "IMG"){
+					// var _price = $(e.target).html();
+					// console.log($(e.target).html())
+					// var _title = $(e.target).html();
+					var _imgs = $(e.target).attr("src");
+					var _id = $(e.target.parentNode.previousElementSibling).val();
+
+				}
+
+
+				var product = {
+					id : _id,
+					imgs : _imgs,
+					// price : _price,
+					// title : _title,
+					amount : 1
+				};
+
+				$.cookie.json = true;
+				var _prod = $.cookie("products") || [];
+				
+					_prod.push(product);
+					console.log(_prod);
+				$.cookie("products", product, {expires:7, path:"/"});
+
+				
+					location = "html/detail.html";
+					function exist(id, products){
+						for(var i = 0, len = products.length; i < len; i++){
+							if(products[i].id == id)
+								return i;
+						}
+						return -1;
+					}*/	
+				
+		
+
