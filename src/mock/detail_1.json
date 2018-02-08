@@ -1,0 +1,14 @@
+{
+	"res_code":1,
+	"res_error":"",
+	"res_body":{
+		"data" : {
+			"id":1, 
+			"title":"德国·KNEIPP克奈圃 面膜礼盒5ml*6片", 
+			"salePrice":161.9,
+			"OriginalPrice":200,
+			"discount":"7折",										
+			"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/275ca/6d4c6206809843d592b4c083501722b2.jpg"
+		}
+	}
+}

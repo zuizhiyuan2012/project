@@ -1,0 +1,771 @@
+.order {
+    width: 1200px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+    .order label {
+        display: block;
+        float: left;
+    }
+
+    .order .hd {
+        margin-bottom: 0;
+    }
+
+        .order .hd h2 {
+            font-size: 18px;
+        }
+
+        .order .hd span a {
+            color: #333;
+        }
+
+.address {
+    overflow: hidden;
+}
+
+    .address .bd {
+        overflow: hidden;
+        margin: 20px 0;
+        position: relative;
+    }
+
+        .address .bd ul {
+            overflow: hidden;
+            height: 36px;
+        }
+
+        .address .bd li {
+            height: 36px;
+            overflow: hidden;
+            padding: 0 12px;
+            line-height: 36px;
+            font-size: 12px;
+            color: #333;
+            position: relative;
+        }
+
+        .address .bd .ad_ope {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+            .address .bd .ad_ope a {
+                font-size: 12px;
+                color: #333;
+                margin-right: 17px;
+            }
+
+        .address .bd li.curr, .address .bd li:hover {
+            background: #fffceb;
+        }
+
+        .address .bd li input {
+            float: left;
+            margin: 12px 12px 0 0;
+        }
+
+        .address .bd li b {
+            padding: 0 20px;
+        }
+
+            .address .bd li b i {
+                color: #dc0f50;
+            }
+
+        .address .bd li em {
+            padding-left: 20px;
+        }
+
+        .address .bd .more {
+            font-size: 12px;
+            border: none;
+            margin-top: 0;
+            margin-right: 10px;
+        }
+.address .hd, .payment .hd, .bill .hd, .confirm .hd{
+    height: 32px;
+    background: url(/img/hd_bg.jpg) repeat-x left bottom;
+    overflow: hidden;
+    margin-bottom: 30px;
+    span{
+        color: #333;
+        font-size: 12px;
+        float: right;
+        line-height: 22px;
+        padding-top: 8px;
+    }
+}
+
+.payment .bd {
+    overflow: hidden;
+    margin: 20px 10px;
+}
+
+    .payment .bd dt {
+        height: 36px;
+        line-height: 36px;
+        color: #666;
+    }
+
+        .payment .bd dt input {
+            float: left;
+            margin: 12px 12px 0 0;
+        }
+
+        .payment .bd dt.curr {
+            color: #dc0f50;
+        }
+
+    .payment .bd dd {
+        position: relative;
+        display: block;
+        height: 125px;
+        overflow: hidden;
+        padding: 3px 90px 3px 36px;
+    }
+
+        .payment .bd dd p {
+            overflow: hidden;
+        }
+
+            .payment .bd dd p + p {
+                border-top: 1px solid #e5e5e5;
+            }
+
+        .payment .bd dd a {
+            display: block;
+            width: 152px;
+            height: 40px;
+            border: 1px solid #e6e7e2;
+            position: relative;
+            float: left;
+            margin: 11px 21px 10px 0;
+        }
+
+            .payment .bd dd a i {
+                display: none;
+            }
+
+            .payment .bd dd a.curr, .payment .bd dd a:hover {
+                border: 1px solid #dc0f50;
+            }
+
+                .payment .bd dd a.curr i, .payment .bd dd a:hover i {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background: url(../img/payment_bg.png) no-repeat;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+
+            .payment .bd dd a img, .pop_mode .cont .bd ul li img {
+                width: 100%;
+                height: 100%;
+            }
+
+        .payment .bd dd span {
+            display: block;
+            font-size: 12px;
+            color: #333;
+            position: absolute;
+            right: 0;
+            padding-right: 15px;
+            background: url(../img/more.png) no-repeat right -26px;
+            top: 50%;
+            margin-top: -12px;
+            cursor: pointer;
+        }
+
+            .payment .bd dd span#curr {
+                background-position: right 6px;
+            }
+
+.bill .bd {
+    overflow: hidden;
+    margin: 20px 0 5px 0;
+}
+
+    .bill .bd p {
+        overflow: hidden;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+        .bill .bd p b {
+            display: block;
+            color: #333;
+            font-size: 14px;
+            width: 115px;
+            float: left;
+            padding-left: 12px;
+        }
+
+            .bill .bd p b input {
+                float: left;
+                margin: 8px 10px 0 0;
+            }
+
+        .bill .bd p font {
+            font-size: 14px;
+            color: #333;
+            display: none;
+        }
+
+        .bill .bd p.curr font {
+            width: 800px;
+            display: block;
+            float: left;
+        }
+
+        .bill .bd p.curr input.ra {
+            margin-right: 5px;
+            position: relative;
+            top: 1px;
+        }
+
+        .bill .bd p.curr input.inp {
+            width: 120px;
+            margin: 0 25px 0 5px;
+            height: 24px;
+            line-height: 24px;
+            border: 1px solid #e5e5e5;
+            padding: 0 4px;
+        }
+
+        .bill .bd p.curr input.inp1 {
+            width: 230px;
+            margin: 0 25px 0 5px;
+            height: 24px;
+            line-height: 24px;
+            border: 1px solid #e5e5e5;
+            padding: 0 4px;
+        }
+
+        .bill .bd p.curr span {
+            overflow: hidden;
+            display: block;
+            clear: both;
+            padding-top: 15px;
+            line-height: 24px;
+            color: #333;
+            font-size: 14px;
+        }
+
+            .bill .bd p.curr span label {
+                padding-right: 75px;
+            }
+
+            .bill .bd p.curr span input {
+                margin-right: 5px;
+                position: relative;
+                top: 1px;
+            }
+
+            .bill .bd p.curr span i {
+                float: left;
+            }
+
+        .bill .bd p.curr em {
+            display: block;
+            font-size: 12px;
+            color: #e92d2f;
+        }
+
+.confirm .bd {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+    .confirm .bd ul {
+        overflow: hidden;
+        padding: 0 0 0 20px;
+    }
+
+    .confirm .bd li {
+        margin-bottom: 10px;
+        overflow: hidden;
+        height: 83px;
+        padding: 16px;
+        background: #f6f6f6;
+    }
+
+        .confirm .bd li a {
+            margin-right: 0px;
+            display: block;
+            width: 520px;
+            float: left;
+            padding-left: 95px;
+            position: relative;
+        }
+
+            .confirm .bd li a img {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            
+            .confirm .bd li a .bill_class_01{
+                    position: absolute;
+                    left: 0;
+                    bottom: -52px;
+                    width: 83px;
+                    height: 20px;
+                    background: #4e91ec;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 20px;
+                    font-size: 15px;
+                }
+            .confirm .bd li a .bill_class_02{
+                    position: absolute;
+                    left: 0;
+                    bottom: -52px;
+                    width: 83px;
+                    height: 20px;
+                    background: #f38c30;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 20px;
+                    font-size:15px;
+                }
+
+
+
+
+
+            .confirm .bd li a em, .confirm .bd li font i, .trolley td a p font i, .trolley td span i, .order-list ul li a b em {
+                display: inline-block;
+                border: 1px solid #f38b47;
+                color: #f07423;
+                line-height: 16px;
+                font-size: 12px;
+                text-align: center;
+                margin: 0 5px 5px 0;
+                width: 33px;
+                height: 16px;
+                background: #fcf7f3;
+                border-radius: 1px;
+            }
+
+            .confirm .bd li a b {
+                display: block;
+                font-size: 12px;
+                line-height: 15px;
+                /* height: 30px; */
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: #333;
+                padding: 10px 0 4px 0;
+            }
+
+            .confirm .bd li a span {
+                line-height: 34px;
+                font-size: 12px;
+                color: #999;
+            }
+
+                .confirm .bd li a span i {
+                    padding-left: 40px;
+                }
+            .confirm .bd li a .tipWrap{
+                color: #333;
+                font-size: 12px;
+            }
+                .confirm .bd li a .tipWrap .zengpin{
+                    display: inline-block;
+                    height: 16px;
+                    line-height: 16px;
+                    padding: 0 6px;
+                    background: #fea829;
+                    font-size: 12px;
+                    color: #fff;
+                    margin-right: 3px;
+                }
+                .confirm .bd li a .tipWrap .sevenday{
+                        display: inline-block;
+                        padding-left: 21px;
+                        background: url(http://image-family.huijiayou.cn/cfiles/staticfiles/upload/2742f/d46a20dd470643ddafdba6e4f5d43716.png) no-repeat;
+                        background-size: 20px auto;
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #333;
+                        margin-right: 26px;
+                }
+        .confirm .bd li font {
+            color: #333;
+            display: block;
+            float: left;
+            padding-top: 34px;
+            line-height: 16px;
+            font-size: 12px;
+        }
+
+            .confirm .bd li font i, .trolley td span i {
+                display: block;
+                background: #fcebeb;
+                color: #e92d2f;
+                border: 1px solid #ef8e8f;
+                margin: 0 auto;
+            }
+
+            .confirm .bd li font.f1 {
+                width: 130px;
+                text-align: center;
+            }
+
+            .confirm .bd li font.f2 {
+                width: 130px;
+                text-align: center;
+                margin: 0 110px 0 30px;
+            }
+
+            .confirm .bd li font.f3 {
+                text-align: center;
+                color: #dc0f50;
+            }
+
+    .confirm .bd p {
+        text-align: right;
+        font-size: 18px;
+        color: #333;
+        padding-top: 10px;
+        line-height: 20px;
+        height: 20px;
+        overflow: hidden;
+    }
+    .confirm .bd p span{
+        float: left;
+        font-size: 13px;
+        color: #ff3333;
+    }
+
+.confirm .ft {
+    padding: 20px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+    .confirm .ft li {
+        overflow: hidden;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+        .confirm .ft li label {
+            display: block;
+            width: 84px;
+            line-height: 26px;
+            float: left;
+            font-size: 14px;
+            color: #333;
+        }
+
+            .confirm .ft li label input {
+                float: left;
+                margin: 7px 10px 0 0;
+            }
+
+        .confirm .ft li select {
+            width: 175px;
+            height: 26px;
+            float: left;
+            border: 1px solid #e5e5e5;
+            color: #666;
+            float: left;
+            margin-right: 16px;
+        }
+
+        .confirm .ft li a.dhxj {
+            display: block;
+            width: 88px;
+            height: 24px;
+            border: 1px solid #dc0f50;
+            color: #dc0f50;
+            font-size: 14px;
+            text-align: center;
+            float: left;
+            margin-right: 12px;
+        }
+
+        .confirm .ft li a.ckqb {
+            color: #666;
+            font-size: 12px;
+            float: left;
+            line-height: 26px;
+            text-decoration: underline;
+        }
+
+        .confirm .ft li p {
+            clear: both;
+            padding-left: 84px;
+            padding-top: 12px;
+        }
+
+            .confirm .ft li p input, .confirm .ft li input.input {
+                width: 163px;
+                height: 24px;
+                border: 1px solid #e5e5e5;
+                padding: 0 5px;
+                float: left;
+                margin-right: 16px;
+            }
+
+            .confirm .ft li p a {
+                display: block;
+                width: 90px;
+                height: 26px;
+                background: #dc0f50;
+                text-align: center;
+                line-height: 26px;
+                color: #fff;
+                font-size: 14px;
+                float: left;
+                margin-right: 16px;
+            }
+
+        .confirm .ft li span {
+            display: block;
+            padding-left: 20px;
+            line-height: 25px;
+            font-size: 14px;
+            color: #e92d2f;
+            background: url(../img/span_bg.png) no-repeat left center;
+            float: left;
+        }
+
+        .confirm .ft li font {
+            display: block;
+            clear: both;
+            padding-left: 84px;
+            line-height: 14px;
+            height: 14px;
+            padding-top: 6px;
+            font-size: 12px;
+            color: #333;
+        }
+
+            .confirm .ft li font i {
+                color: #dc0f50;
+            }
+
+    .confirm .ft .total {
+        font-size: 18px;
+        color: #333;
+        position: absolute;
+        right: 0;
+        bottom: 36px;
+    }
+
+        .confirm .ft .total i {
+            color: #3fb35c;
+        }
+
+.confirm .pay {
+    text-align: right;
+    padding: 15px 0;
+}
+
+    .confirm .pay i {
+        display: block;
+        line-height: 30px;
+        color: #999;
+        font-size: 18px;
+    }
+
+    .confirm .pay p {
+        font-size: 18px;
+        color: #333;
+        line-height: 48px;
+    }
+
+        .confirm .pay p b {
+            font-size: 30px;
+            color: #dc0f50;
+        }
+
+    .confirm .pay span {
+        display: block;
+        height: 50px;
+    }
+
+    .confirm .pay a {
+        display: inline-block;
+        width: 198px;
+        height: 48px;
+        text-align: center;
+        font-size: 20px;
+        color: #dc0f50;
+        border: 1px solid #dc0f50;
+        line-height: 48px;
+        margin-left: 10px;
+    }
+
+        .confirm .pay a.tj {
+            background: #dc0f50;
+            color: #fff;
+        }
+
+        .confirm .pay a.on {
+            background: #999;
+            color: #fff;
+            border: 1px solid #999;
+        }
+/*=添加地址弹出框*/
+.add_pop i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.2;
+    opacity: 0.2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.add_pop .cont {
+    overflow: hidden;
+    width: 764px;
+    height: 526px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    margin: -264px 0 0 -382px;
+}
+
+    .add_pop .cont h2 {
+        height: 34px;
+        line-height: 34px;
+        font-size: 14px;
+        background: #f5f5f5;
+        color: #333;
+        padding: 0 15px;
+    }
+
+        .add_pop .cont h2 a {
+            float: right;
+            color: #666;
+            cursor: pointer;
+        }
+
+    .add_pop .cont ul {
+        padding: 23px 0 0 0;
+        overflow: hidden;
+    }
+
+        .add_pop .cont ul li {
+            overflow: hidden;
+            margin-bottom: 22px;
+            line-height: 32px;
+            color: #666;
+            font-size: 14px;
+            label{
+                color: #666;
+                display: block;
+                float: left;
+                width: 60px;
+                line-height: 32px;
+                input{
+                    width: 15px;
+                    height: 15px;
+                    float: left;
+                    padding: 0;
+                    border: none;
+                    margin: 8px 5px 0 0;
+                }
+            } 
+                
+        }
+
+            .add_pop .cont ul li b {
+                display: block;
+                width: 132px;
+                float: left;
+                text-align: right;
+                margin-right: 8px;
+                color: #666;
+            }
+
+                .add_pop .cont ul li b em {
+                    color: #ff3333;
+                    font-family: '宋体';
+                    padding-right: 5px;
+                }
+
+            .add_pop .cont ul li input {
+                float: left;
+                margin-right: 15px;
+                width: 160px;
+                line-height: 30px;
+                color: #666;
+                font-size: 14px;
+                height: 30px;
+                border: 1px solid #ccc;
+                padding: 0 10px;
+                float: left;
+            }
+
+                .add_pop .cont ul li input.text {
+                    width: 353px;
+                }
+
+                .add_pop .cont ul li input.curr {
+                    border: 1px solid #dc0f50;
+                }
+
+            .add_pop .cont ul li span, .homepage .modify li span {
+                margin-top: 6px;
+            }
+
+                .add_pop .cont ul li span, .add_pop .cont ul li span.s1, .homepage .modify li span, .homepage .modify li span.s1 {
+                    height: 32px;
+                    line-height: 32px;
+                }
+
+            .add_pop .cont ul li select {
+                margin-right: 30px;
+                color: #666;
+                width: 105px;
+                height: 32px;
+                border: 1px solid #ccc;
+                float: left;
+            }
+
+            .add_pop .cont ul li p {
+                clear: both;
+                padding-left: 142px;
+                font-size: 12px;
+                color: #e92d2f;
+                line-height: 20px;
+            }
+
+            .add_pop .cont ul li.curr {
+                height: 50px;
+                margin-top: -15px;
+            }
+
+                .add_pop .cont ul li.curr a {
+                    display: block;
+                    width: 150px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    margin: 0 auto;
+                    background: #dc0f50;
+                    color: #fff;
+                    font-size: 18px;
+                }

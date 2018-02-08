@@ -1,0 +1,14 @@
+{
+	"res_code":1,
+	"res_error":"",
+	"res_body":{
+		"data" : {
+			"id":3,
+			"title":"嘉兰诺长款保暖毛衫连衣裙 黑色", 
+			"salePrice":59.9,
+			"OriginalPrice":160,
+			"discount":"3折",
+			"src":"http://image-family.huijiayou.cn/cfiles/staticfiles/upload/27436/e3467c395e464a71b399ae94f8306768.jpg"
+		}
+	}
+}
